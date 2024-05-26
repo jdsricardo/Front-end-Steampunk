@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SENASP</title>
+  <link href="assets/icon.ico" rel="icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rye&family=Sancreek&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rye&family=Sancreek&family=Viaoda+Libre&display=swap');
+  </style>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/container.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/plans.css">
+  <link rel="stylesheet" href="styles/benefits.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/form-newsletter.css">
+  <link rel="stylesheet" href="styles/cursos.css">
+</head>
+
+<body>
+  <div class="background-container"></div>
+  <div class="cloud-container">
+    <div class="cloud">
+       <img src="assets/vapor.jpg" alt="" class="img_cloud">
+    </div>
+  </div>
+<div class="engrenagens-container"></div>
+
+<header class="cabecalho container">
+  <a href="index.html">
+    <img class="cabecalho__logo" src="assets/logotipo.png" title="Ir para a página inicial do SENASP" alt="SENASP">
+  </a>
+  <nav>
+    <ul class="cabecalho__menu">
+      <li class="cabecalho__item-menu"> <a href="about.html#contato"> Contato </a> </li>
+      <li class="cabecalho__item-menu"><a href="#" onclick="alert('Desculpe, o login não está disponível no momento. Estamos em obras.');">Entrar</a></li>
+      <li class="cabecalho__item-menu cabecalho__item-menu--matricular"> <a href="matricula.html"> Matricule-se </a> </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="cursos">
+      <article class="cursos__chamada --largura-grande">
+        <h1 class="chamada__titulo">Serviço Nacional de Aprendizado <strong class="chamada__titulo--destaque">Steampunk</strong></h1>
+        <p>Comece agora e aprenda a fazer uma máquina à vapor em 10 minutos!</p>
+        <a href="cursos.html" class="chamada__cursos__matricula botao">Matricule-se</a>
+      </article>
+      <nav>
+          <ul class="cursos__lista">
+              <li class="curso--aeromovel">
+                  <a href="#">Montagem aeromóvel</a>
+              </li>
+              <li class="curso--cadeira">
+                  <a href="#">Cadeira de rodas a vapor (Exclusivo para PCD)</a>
+              </li>
+              <li class="curso--controle">
+                  <a href="#">Controle maquinário</a>
+              </li>
+              <li class="curso--escavadeira curso--destaque">
+                  <a href="#">Grau de escavadeira 1</a>
+              </li>
+              <li class="curso--motor">
+                  <a href="#">Montagem motor à vapor</a>
+              </li>
+              <li class="curso--zepelin curso--destaque2">
+                  <a href="#">Pilotagem Zepelin</a>
+              </li>
+              <li class="curso--robo">
+                  <a href="#">Robótica avançada</a>
+              </li>
+              <li class="curso--protese">
+                  <a href="#">Prótese robótica</a>
+              </li>
+              <li class="curso--quimica">
+                  <a href="#">Química avançada</a>
+              </li>
+              <li class="curso--trem">
+                  <a href="#">Montagem de Trens</a>
+              </li>
+          </ul>
+      </nav>
+  </section>
+  <section class="video">
+    <video  controls class="video--mobile" src="assets/video.mp4" poster="assets/thumb.jpeg"></video>
+    <video controls class="video--desktop" src="assets/video.mp4" poster="assets/thumb.jpeg"></video>
+    <article class="video__textos">
+      <h2 class="textos__titulo">Estude com os melhores professores!</h2>
+      <p>Dr. Filipe Figueiredo, grande historiador, apresenta este mundo</p>
+    </article>
+  </section>
+  <section class="planos"> 
+      <h2 class="planos__titulo">Acesso de 1 ano a todos os cursos</h2>
+      <article class="cards__planoanual">
+        <span class="plano--destaque"> + Assinado</span>
+        <div class="planos__card card--anual">
+          <h3 class="plano__titulo">Plano Anual</h3>
+          <p>12x <span class="valor--destaque">R$ 50,00</span></p>
+          <p>Valor total de R$ 600,00</p>
+          <span>Acesso à aulas extras</span>
+          <a href="matricula.html" class="cards__botao botao">Matricule-se</a>
+        </div>
+      </article>
+      <article class="planos__card card--semestral">
+        <h3 class="plano__titulo">Plano Semestral</h3>
+        <p>12x <span class="valor--destaque">R$ 60,00</span></p>
+        <p>Valor total de R$ 360,00</p>
+        <a href="matricula.html" class="cards__botao botao">Matricule-se</a>
+      </article>
+      <article class="planos__pagamentos">
+        <p>Pagamento seguro com Bitcoin</p>
+        <p>Oferecemos boleto à vista, <a href="#">basta entrar em contato</a></p>
+      </article>
+    </section>
+    <section class="beneficios">
+      <h2 class="beneficios__titulo">Porque estudar no SENASP?</h2>
+      <ul class="beneficios__lista">
+        <li class="beneficio--paravoce">
+          <h3 class="beneficio__titulo">Tudo para você realmente aprender</h3>
+          <p class="beneficio__texto">Você tem acesso a tudo! São aulas, exercícios, mais aulas, e mais exercícios, e mais aulas, dai a parte prática. Matricule-se já</p>
+        </li>
+        <li class="beneficio--duvidas">
+          <h3 class="beneficio__titulo">Nenhuma dúvida sem resposta</h3>
+          <p class="beneficio__texto">Dúvidas são importantes para o seu aprendizado, e as dificuldades são normais. No SENASP você estuda com todo o suporte necessário. Além de todo conteúdo, você tira dúvidas.</p>
+        </li>
+        <li class="beneficio--didatica">
+          <h3 class="beneficio__titulo">Didática cuidadosa que te faz aprender</h3>
+          <p class="beneficio__texto">Saber fazer não quer dizer saber ensinar. No SENASP você encontra os dois! Nosso orgulho é justo o extremo cuidado didático que temo com as aulas. Investimos muito tempo.</p>
+        </li>
+        <li class="beneficio--online">
+          <h3 class="beneficio__titulo">Estudar é a melhor opção</h3>
+          <p class="beneficio__texto">Aprender algo novo é sempre necessário. E no SENASP você se qualifica para a industria com os melhores profissionais de cada área dispostos a te ensinar.</p>
+        </li>
+      </ul>
+      </section>
+</main>
+
+<footer class="rodape container">
+  <section class="rodape__secao rodape__secao--sobre">
+      <img class="rodape__logo" src="assets/logotipo.png" alt="Logo do SENASP">
+      <p class="rodape__infos-empresa">
+        Ricardinho Sistemas de Informática S.A.
+        <br>
+        CNPJ XX.XXX.XXX/XXXX-XX 
+        <br>
+        Rua Trembolona - Indaial/SC
+        <br>
+        Telefone (XX) XXXXX-XXXX
+      </p>
+
+    </section>
+    <section class="rodape__secao rodape__secao--cursos">
+      <h2 class="rodape__titulo"> Cursos do SENASP </h2>
+      <nav>
+        <ul>
+           <li class="rodape_item-lista"><a href="#">Montagem aeromóvel</a></li>
+           <li class="rodape_item-lista"><a href="#">Cadeira de rodas a vapor (Exclusivo para PCD)</a></li>
+           <li class="rodape_item-lista"><a href="#">Controle maquinário</a></li>
+           <li class="rodape_item-lista"><a href="#">Grau de escavadeira 1</a></li>
+           <li class="rodape_item-lista"><a href="#">Montagem de trens</a></li>
+           <li class="rodape_item-lista"><a href="#">Montagem motor à vapor</a></li>
+           <li class="rodape_item-lista"><a href="#">Pilotagem Zepelin</a></li>
+           <li class="rodape_item-lista"><a href="#">Robótica avançada</a></li>
+           <li class="rodape_item-lista"><a href="#">Química</a></li>
+           <li class="rodape_item-lista"><a href="#">Prótese robótica</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="rodape__secao rodape__secao--links">
+      <h2 class="rodape__titulo"> SENASP </h2>
+      <nav>
+        <ul>
+           <li class="rodape_item-lista"><a href="#">Apostila</a></li>
+           <li class="rodape_item-lista"><a href="#">E-book</a></li>
+           <li class="rodape_item-lista"><a href="#">Login</a></li>
+           <li class="rodape_item-lista"><a href="#">Matricule-se</a></li>
+           <li class="rodape_item-lista"><a href="#">Perguntas frequentes</a></li>
+           <li class="rodape_item-lista"><a href="#">Para Escolas</a></li>
+           <li class="rodape_item-lista"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </section>
+    
+    <section class="rodape__secao rodape__secao--newsletter">
+        <h2 class="rodape__titulo"> 
+          Cadastre seu e-mail para receber novidades e lançamentos 
+        </h2>
+
+        <form action="#" method="get" class="form-newsletter">
+          <label for="form-newsletter__label" class="form-newsletter__label">
+            Seu email pessoal
+          </label>
+          <input id="email-newsletter" name="email-newsletter" type="email" class="form-newsletter__campo">
+          <button type="submit" class="form-newsletter__botao">
+            OK
+          </button>
+        </form>
+      </section>
+</footer>
+    
+  <script src="script.js"></script>
+</body>
+</html>

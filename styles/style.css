@@ -1,0 +1,154 @@
+body {
+  width: 80%;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Rye", serif; 
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+/* Imagem de fundo*/
+.background-container {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/tamplate.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;  
+}
+
+.titulo {
+  padding-top: 7rem;
+  font-size: larger;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.subtitulo {
+  border-bottom: 2px solid black;
+  background-color: hsl(32, 77%, 37%);
+}
+
+figure {
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 30px;
+  padding: 15px;
+  background-color: hsl(32, 77%, 37%);
+  border: 1px solid hsl(31, 76%, 36%);
+}
+
+figcaption {
+  margin-top: 10px;
+}
+
+.Img-Sede {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Img-Familia {
+  width: 275px;
+  float: right;
+}
+
+figure img {
+  width: 100%;
+}
+
+.contato__subtitulo {
+  display: inline;
+}
+
+.contato__secao {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 16px;
+}
+
+.contato__secao--telefone {
+  margin-left: 32px;
+}
+
+.contato__info {
+  margin: 16px 0 24px;
+  padding-left: 32px;
+}
+
+.contato__info-titulo,
+.contato__info-descricao {
+  display: inline;
+}
+
+.contato__info-descricao {
+  margin-left: 10px;
+}
+
+
+/*Ajustes de responsividade*/
+@media (max-width: 850px) {
+
+  .contato__secao {
+    display: block;
+    margin-left: 1em;
+  }
+
+}
+
+@media (max-width: 622px) {
+
+  .familia-tupfeln {
+    float: none;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 446px) {
+
+  .contato__subtitulo {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .contato__info {
+    padding-left: 5px;
+    
+    font-size: .92em;
+
+    border-left: 2px solid lightgray;
+  }
+
+  .rodape {
+    font-size: .92em;
+  }
+
+}
+
+@media (max-width: 342px) {
+
+  .contato__info-descricao {
+    display: block;
+    margin-left: 1em;
+  }
+
+}

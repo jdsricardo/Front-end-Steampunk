@@ -1,0 +1,72 @@
+/* Animações (engrenagens e vapor)*/
+.cloud-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  
+  .cloud {
+    position: fixed;
+    bottom: 0;
+    width: 250.625em;
+    height: 43.75em;
+    animation: rotationLeft 40s linear infinite;
+  }
+  
+  @keyframes rotationLeft {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: translate3d(-50%,0,0);
+    }
+  }
+  
+  .img_cloud {
+    margin-top: 4rem;
+    opacity: 0.3;
+  }
+  
+  .engrenagens-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    opacity: 0.5;
+  }
+  
+  .rotating-image {
+    position: absolute;
+    width: 130px;
+    height: auto;
+    animation: rotate 10s infinite linear;
+    z-index: -1;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .reverse-rotation {
+    animation: rotate-reverse 10s infinite linear;
+  }
+  
+  @keyframes rotate-reverse {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SENASP | Matrícula</title>
+  <link href="assets/icon.ico" rel="icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rye&family=Sancreek&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rye&family=Sancreek&family=Viaoda+Libre&display=swap');
+  </style>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/container.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/form-newsletter.css">
+  <link rel="stylesheet" href="styles/cursos.css">
+</head>
+<body>
+  <div class="background-container"></div>
+  <div class="cloud-container">
+    <div class="cloud">
+       <img src="assets/vapor.jpg" alt="" class="img_cloud">
+    </div>
+  </div>
+<div class="engrenagens-container"></div>
+
+<header class="cabecalho container">
+  <a href="index.html">
+    <img class="cabecalho__logo" src="assets/logotipo.png" title="Ir para a página inicial do SENASP" alt="SENASP">
+  </a>
+  <nav>
+    <ul class="cabecalho__menu">
+      <li class="cabecalho__item-menu"> <a href="about.html#contato"> Contato </a> </li>
+      <li class="cabecalho__item-menu"><a href="#" onclick="alert('Desculpe, o login não está disponível no momento. Estamos em obras.');">Entrar</a></li>
+      <li class="cabecalho__item-menu cabecalho__item-menu--matricular"> <a href="matricula.html"> Matricule-se </a> </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="cursos">
+    <div>
+        <div class="container">
+            <h1>Escolher cursos</h1>
+            <p class="subtitulo">Escolha os cursos que gostaria de se matricular</p>
+        </div>
+    </div>
+<table>
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Curso</th>
+            <th scope="col">Tempo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="180"></td>
+            <td>Montagem aeromóvel</td>
+            <td>180h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+            <td>Cadeira de rodas a vapor</td>
+            <td>30h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+            <td>Controle maquinário</td>
+            <td>12h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+            <td>Grau de escavadeira 1</td>
+            <td>20h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+            <td>Grau de escavadeira 2</td>
+            <td>30h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="280"></td>
+            <td>Montagem de trens</td>
+            <td>280h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+            <td>Montagem motor à vapor</td>
+            <td>20h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="46"></td>
+            <td>Pilotagem Zepelin</td>
+            <td>46h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="67"></td>
+            <td>Robótica avançada</td>
+            <td>67h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="120"></td>
+            <td>Química</td>
+            <td>120h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="450"></td>
+            <td>Prótese robótica</td>
+            <td>450h</td>
+        </tr>
+        <tr>
+            <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="1"></td>
+            <td>Curso de Java</td>
+            <td>1h</td>
+        </tr>
+        <tr class="bg-dark text-light">
+            <td>Total</td>
+            <td class="js-total-de-cursos">0 curso(s)</td>
+            <td class="js-total-de-horas">0h</td>
+        </tr>
+    </tbody>
+</table>
+<button type="button" class="js-botao-matricula btn btn-outline-dark btn-lg mb-4">Confirmar Matrícula</button>
+      </section>
+</main>
+
+<footer class="rodape container">
+  <section class="rodape__secao rodape__secao--sobre">
+      <img class="rodape__logo" src="assets/logotipo.png" alt="Logo do SENASP">
+      <p class="rodape__infos-empresa">
+        Ricardinho Sistemas de Informática S.A.
+        <br>
+        CNPJ XX.XXX.XXX/XXXX-XX 
+        <br>
+        Rua Trembolona - Indaial/SC
+        <br>
+        Telefone (XX) XXXXX-XXXX
+      </p>
+    </section>
+    <section class="rodape__secao rodape__secao--cursos">
+      <h2 class="rodape__titulo"> Cursos do SENASP </h2>
+      <nav>
+        <ul>
+          <li class="rodape_item-lista"><a href="#">Montagem aeromóvel</a></li>
+          <li class="rodape_item-lista"><a href="#">Cadeira de rodas a vapor (Exclusivo para PCD)</a></li>
+          <li class="rodape_item-lista"><a href="#">Controle maquinário</a></li>
+          <li class="rodape_item-lista"><a href="#">Grau de escavadeira 1</a></li>
+          <li class="rodape_item-lista"><a href="#">Montagem de trens</a></li>
+          <li class="rodape_item-lista"><a href="#">Montagem motor à vapor</a></li>
+          <li class="rodape_item-lista"><a href="#">Pilotagem Zepelin</a></li>
+          <li class="rodape_item-lista"><a href="#">Robótica avançada</a></li>
+          <li class="rodape_item-lista"><a href="#">Química</a></li>
+          <li class="rodape_item-lista"><a href="#">Prótese robótica</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="rodape__secao rodape__secao--links">
+      <h2 class="rodape__titulo"> SENASP </h2>
+      <nav>
+        <ul>
+           <li class="rodape_item-lista"><a href="#">Apostila</a></li>
+           <li class="rodape_item-lista"><a href="#">E-book</a></li>
+           <li class="rodape_item-lista"><a href="#">Login</a></li>
+           <li class="rodape_item-lista"><a href="#">Matricule-se</a></li>
+           <li class="rodape_item-lista"><a href="#">Perguntas frequentes</a></li>
+           <li class="rodape_item-lista"><a href="#">Para Escolas</a></li>
+           <li class="rodape_item-lista"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </section>
+    
+    <section class="rodape__secao rodape__secao--newsletter">
+        <h2 class="rodape__titulo"> 
+          Receba novidades e lançamentos 
+        </h2>
+
+        <form action="#" method="get" class="form-newsletter">
+          <label for="form-newsletter__label" class="form-newsletter__label">
+            Seu email pessoal
+          </label>
+          <input id="email-newsletter" name="email-newsletter" type="email" class="form-newsletter__campo">
+          <button type="submit" class="form-newsletter__botao">
+            OK
+          </button>
+        </form>
+      </section>
+</footer>
+    
+  <script src="script.js"></script>
+</body>
+</html>
